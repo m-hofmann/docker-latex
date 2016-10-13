@@ -1,2 +1,2 @@
 # docker-latex
-Docker Image for LaTeX CI
+Docker image for LaTeX CI
