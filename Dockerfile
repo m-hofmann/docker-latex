@@ -4,4 +4,4 @@ FROM alpine:3.4
 # install
 RUN apk update
 RUN apk add git
-RUN apk add texlive-full@testing
+RUN apk add texlive-full@edge
