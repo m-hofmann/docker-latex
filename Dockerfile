@@ -5,4 +5,4 @@ FROM alpine:3.4
 RUN cat /etc/apk/repositories
 RUN apk update
 RUN apk add --update git
-RUN apk add --update texlive
+RUN apk add --update --no-cache texlive
