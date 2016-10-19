@@ -1,8 +1,7 @@
 # base image
-FROM alpine:edge
+FROM ubuntu:16.04
 
 # install
-RUN cat /etc/apk/repositories
-RUN apk update
-RUN apk add --update git
-RUN apk add --update --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/edge/testing texlive-full
+RUN apt-get -qq -y update
+RUN apt-get -qq -y install git
+RUN apt-get -qq -y install texlive-full
